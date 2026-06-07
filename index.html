@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations & UI Feedback</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold">Animations & UI Feedback</h1>
+    <p class="text-gray-600 mt-2">Hover, click, and interact with the elements below!</p>
+  </header>
+
+  <!-- Section 1: Built-in Animations -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+    <!-- Spinner -->
+    <div class="bg-white p-6 rounded shadow text-center">
+      <div class="animate-spin h-10 w-10 border-4 border-blue-500 border-t-transparent rounded-full mx-auto"></div>
+      <h3 class="mt-4 font-semibold">animate-spin</h3>
+      <p class="text-sm text-gray-500">Loading spinner effect</p>
+    </div>
+
+    <!-- Ping -->
+    <div class="bg-white p-6 rounded shadow text-center relative">
+      <span class="flex h-10 w-10 mx-auto">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-10 w-10 bg-green-500"></span>
+      </span>
+      <h3 class="mt-4 font-semibold">animate-ping</h3>
+      <p class="text-sm text-gray-500">Notification pulse</p>
+    </div>
+
+    <!-- Pulse -->
+    <div class="bg-white p-6 rounded shadow text-center">
+      <div class="animate-pulse bg-gray-300 h-10 w-32 mx-auto rounded"></div>
+      <h3 class="mt-4 font-semibold">animate-pulse</h3>
+      <p class="text-sm text-gray-500">Skeleton loader effect</p>
+    </div>
+
+    <!-- Bounce -->
+    <div class="bg-white p-6 rounded shadow text-center">
+      <div class="animate-bounce text-3xl">⬇️</div>
+      <h3 class="mt-4 font-semibold">animate-bounce</h3>
+      <p class="text-sm text-gray-500">Bounce indicator</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Button Animations -->
+  <section class="px-6 py-10">
+    <h2 class="text-2xl font-bold mb-6">Button Animations</h2>
+    <div class="flex flex-wrap gap-4">
+      <button class="px-4 py-2 bg-blue-500 text-white rounded transition-transform duration-300 hover:scale-110">Scale</button>
+      <button class="px-4 py-2 bg-green-500 text-white rounded transition-all duration-300 hover:scale-110 hover:shadow-lg">Shadow + Scale</button>
+      <button class="px-4 py-2 bg-purple-500 text-white rounded transition-colors duration-300 hover:bg-purple-700">Color Transition</button>
+      <button class="px-4 py-2 bg-red-500 text-white rounded transition-transform duration-300 hover:rotate-6">Rotate</button>
+      <button class="px-4 py-2 bg-yellow-500 text-white rounded transition-transform duration-300 hover:-translate-y-1">Lift</button>
+      <button class="px-4 py-2 bg-indigo-500 text-white rounded transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-xl">Combined</button>
+      <button class="px-4 py-2 bg-gray-700 text-white rounded transition-transform duration-300 active:scale-95">Active State</button>
+    </div>
+  </section>
+
+  <!-- Continue with Sections 3–6 following same pattern -->
+</body>
+</html>
